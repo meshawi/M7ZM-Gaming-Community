@@ -1,0 +1,343 @@
+// tailwind.config.js
+const { nextui } = require("@nextui-org/react");
+
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  content: [
+    "./src/**/*.{js,ts,jsx,tsx}",
+    "./node_modules/@nextui-org/theme/dist/**/*.{js,ts,jsx,tsx}",
+  ],
+  theme: {
+    extend: {},
+  },
+  darkMode: "class",
+  plugins: [
+    nextui({
+      themes: {
+        light: {
+          layout: {},
+          colors: {},
+        },
+        dark: {
+          layout: {},
+          colors: {},
+        },
+        "purple-dark": {
+          extend: "dark",
+          colors: {
+            background: "#0D001A",
+            foreground: "#ffffff",
+            primary: {
+              50: "#3B096C",
+              100: "#520F83",
+              200: "#7318A2",
+              300: "#9823C2",
+              400: "#c031e2",
+              500: "#DD62ED",
+              600: "#F182F6",
+              700: "#FCADF9",
+              800: "#FDD5F9",
+              900: "#FEECFE",
+              DEFAULT: "#DD62ED",
+              foreground: "#ffffff",
+            },
+            focus: "#F182F6",
+          },
+          layout: {
+            disabledOpacity: "0.3",
+            radius: {
+              small: "4px",
+              medium: "6px",
+              large: "8px",
+            },
+            borderWidth: {
+              small: "1px",
+              medium: "2px",
+              large: "3px",
+            },
+          },
+        },
+        "black-orange": {
+          extend: "dark",
+          colors: {
+            background: "#000000",
+            foreground: "#ffffff",
+            primary: {
+              50: "#330000",
+              100: "#4d0000",
+              200: "#660000",
+              300: "#800000",
+              400: "#cc3300",
+              500: "#ff6600",
+              600: "#ff8533",
+              700: "#ff9933",
+              800: "#ffad66",
+              900: "#ffcc99",
+              DEFAULT: "#ff6600",
+              foreground: "#ffffff",
+            },
+            focus: "#ff8533",
+          },
+          layout: {
+            disabledOpacity: "0.3",
+            radius: {
+              small: "4px",
+              medium: "6px",
+              large: "8px",
+            },
+            borderWidth: {
+              small: "1px",
+              medium: "2px",
+              large: "3px",
+            },
+          },
+        },
+        "blue-pink": {
+          extend: "dark",
+          colors: {
+            background: "#001a33",
+            foreground: "#ffffff",
+            primary: {
+              50: "#4d0052",
+              100: "#660066",
+              200: "#800080",
+              300: "#993399",
+              400: "#cc66cc",
+              500: "#ff99ff",
+              600: "#ffb3ff",
+              700: "#ffccff",
+              800: "#ffe6ff",
+              900: "#fff2ff",
+              DEFAULT: "#ff99ff",
+              foreground: "#ffffff",
+            },
+            focus: "#ffb3ff",
+          },
+          layout: {
+            disabledOpacity: "0.3",
+            radius: {
+              small: "4px",
+              medium: "6px",
+              large: "8px",
+            },
+            borderWidth: {
+              small: "1px",
+              medium: "2px",
+              large: "3px",
+            },
+          },
+        },
+        "green-yellow": {
+          extend: "dark",
+          colors: {
+            background: "#003300",
+            foreground: "#ffffff",
+            primary: {
+              50: "#336600",
+              100: "#4d8000",
+              200: "#669900",
+              300: "#80b300",
+              400: "#99cc00",
+              500: "#b3e600",
+              600: "#cce600",
+              700: "#e6f500",
+              800: "#f2f700",
+              900: "#faffbf",
+              DEFAULT: "#b3e600",
+              foreground: "#ffffff",
+            },
+            focus: "#cce600",
+          },
+          layout: {
+            disabledOpacity: "0.3",
+            radius: {
+              small: "4px",
+              medium: "6px",
+              large: "8px",
+            },
+            borderWidth: {
+              small: "1px",
+              medium: "2px",
+              large: "3px",
+            },
+          },
+        },
+        "sunset-glow": {
+          extend: "light",
+          colors: {
+            background: "#FFD1DC",
+            foreground: "#ffffff",
+            primary: {
+              50: "#FFA3B1",
+              100: "#FF8FA3",
+              200: "#FF7A94",
+              300: "#FF6486",
+              400: "#FF4F78",
+              500: "#FF396A",
+              600: "#FF245B",
+              700: "#FF0E4D",
+              800: "#E60044",
+              900: "#CC003B",
+              DEFAULT: "#FF396A",
+              foreground: "#ffffff",
+            },
+            focus: "#FF245B",
+          },
+          layout: {
+            disabledOpacity: "0.3",
+            radius: {
+              small: "4px",
+              medium: "6px",
+              large: "8px",
+            },
+            borderWidth: {
+              small: "1px",
+              medium: "2px",
+              large: "3px",
+            },
+          },
+        },
+        "midnight-blue": {
+          extend: "dark",
+          colors: {
+            background: "#001F3F",
+            foreground: "#ffffff",
+            primary: {
+              50: "#003366",
+              100: "#004080",
+              200: "#004C99",
+              300: "#0059B3",
+              400: "#0066CC",
+              500: "#0073E6",
+              600: "#3399FF",
+              700: "#66B2FF",
+              800: "#99CCFF",
+              900: "#CCE5FF",
+              DEFAULT: "#0073E6",
+              foreground: "#ffffff",
+            },
+            focus: "#3399FF",
+          },
+          layout: {
+            disabledOpacity: "0.3",
+            radius: {
+              small: "4px",
+              medium: "6px",
+              large: "8px",
+            },
+            borderWidth: {
+              small: "1px",
+              medium: "2px",
+              large: "3px",
+            },
+          },
+        },
+        "forest-green": {
+          extend: "light",
+          colors: {
+            background: "#004d00",
+            foreground: "#ffffff",
+            primary: {
+              50: "#006600",
+              100: "#008000",
+              200: "#009900",
+              300: "#00b300",
+              400: "#00cc00",
+              500: "#00e600",
+              600: "#33ff33",
+              700: "#66ff66",
+              800: "#99ff99",
+              900: "#ccffcc",
+              DEFAULT: "#00e600",
+              foreground: "#ffffff",
+            },
+            focus: "#33ff33",
+          },
+          layout: {
+            disabledOpacity: "0.3",
+            radius: {
+              small: "4px",
+              medium: "6px",
+              large: "8px",
+            },
+            borderWidth: {
+              small: "1px",
+              medium: "2px",
+              large: "3px",
+            },
+          },
+        },
+        "ocean-breeze": {
+          extend: "light",
+          colors: {
+            background: "#E0F7FA",
+            foreground: "#004D40",
+            primary: {
+              50: "#B2DFDB",
+              100: "#80CBC4",
+              200: "#4DB6AC",
+              300: "#26A69A",
+              400: "#009688",
+              500: "#00897B",
+              600: "#00796B",
+              700: "#00695C",
+              800: "#004D40",
+              900: "#003D33",
+              DEFAULT: "#00897B",
+              foreground: "#004D40",
+            },
+            focus: "#26A69A",
+          },
+          layout: {
+            disabledOpacity: "0.3",
+            radius: {
+              small: "4px",
+              medium: "6px",
+              large: "8px",
+            },
+            borderWidth: {
+              small: "1px",
+              medium: "2px",
+              large: "3px",
+            },
+          },
+        },
+        "sunny-day": {
+          extend: "light",
+          colors: {
+            background: "#FFF8E1",
+            foreground: "#FF6F00",
+            primary: {
+              50: "#FFECB3",
+              100: "#FFE082",
+              200: "#FFD54F",
+              300: "#FFCA28",
+              400: "#FFC107",
+              500: "#FFB300",
+              600: "#FFA000",
+              700: "#FF8F00",
+              800: "#FF6F00",
+              900: "#FF5722",
+              DEFAULT: "#FFB300",
+              foreground: "#FF6F00",
+            },
+            focus: "#FFC107",
+          },
+          layout: {
+            disabledOpacity: "0.3",
+            radius: {
+              small: "4px",
+              medium: "6px",
+              large: "8px",
+            },
+            borderWidth: {
+              small: "1px",
+              medium: "2px",
+              large: "3px",
+            },
+          },
+        },
+      },
+    }),
+  ],
+};
